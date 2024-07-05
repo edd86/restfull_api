@@ -39,6 +39,11 @@ router.post("/", async (req, res) => {
   }
 });
 
+/**
+ * GET client by ID
+ * @param {object} req - The request object
+ * @param {object} res - The response object
+ */
 router.get("/:id", getClient, (req, res) => {
   res.json(res.client);
 });
